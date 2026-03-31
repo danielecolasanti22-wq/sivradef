@@ -11,7 +11,7 @@ export function Footer() {
               SIVRA<span className="text-accent">.</span>
             </Link>
             <p className="text-muted text-sm leading-relaxed max-w-xs">
-              SIVRA è un partner di crescita strategica che aiuta le PMI e i professionisti a scalare il proprio fatturato attraverso sistemi di acquisizione e conversione basati sui dati.
+            SIVRA costruisce il sistema di acquisizione clienti per imprenditori italiani che vogliono smettere di dipendere dal passaparola e scalare in modo prevedibile.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-accent hover:text-accent transition-all">
@@ -51,22 +51,22 @@ export function Footer() {
             <ul className="space-y-4 text-sm font-medium">
               <li className="flex items-center gap-3 text-muted">
                 <Mail size={16} className="text-accent" />
-                <a href="mailto:hello@sivra.com" className="hover:text-accent transition-colors">hello@sivra.com</a>
+                <a href="mailto:info@sivragp.com" className="hover:text-accent transition-colors">info@sivragp.com</a>
               </li>
               <li className="flex items-center gap-3 text-muted">
                 <Phone size={16} className="text-accent" />
-                <span>+39 02 123 4567</span>
+                <span>+39 320 968 4720</span>
               </li>
               <li className="flex items-center gap-3 text-muted">
                 <MapPin size={16} className="text-accent" />
-                <span>Milano, Italia</span>
+                <span>Roma, Italia</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] md:text-xs text-muted uppercase tracking-widest font-bold">
-          <p>&copy; {new Date().getFullYear()} SIVRA - Growth Partner. P.IVA 12345678901</p>
+          <p>&copy; {new Date().getFullYear()} SIVRA - Growth Partner.</p>
           <div className="flex gap-8">
             <Link to="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
             <Link to="/cookies" className="hover:text-accent transition-colors">Cookie Policy</Link>
