@@ -104,7 +104,7 @@ export default async function handler(req, res) {
 
     const emailSend = await brevoFetch('https://api.brevo.com/v3/smtp/email', {
       sender: { email: senderEmail, name: senderName },
-      to: [{ email: notificationEmail, name: 'Daniele' }],
+      to: [{ email: notificationEmail, name: 'Sivra Team' }],
       subject: 'Nuova iscrizione newsletter dal Blog',
       htmlContent: `
         <h2>Nuova iscrizione newsletter</h2>
