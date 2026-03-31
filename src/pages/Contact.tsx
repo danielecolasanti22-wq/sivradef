@@ -108,18 +108,41 @@ export function Contact() {
     if (!hasErrors) {
       setIsSubmitting(true);
       // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      setIsSubmitting(false);
-      setIsSuccess(true);
-      setFormData({
-        name: '',
-        company: '',
-        revenue: '',
-        challenge: '',
-        contact: '',
-      });
-      setTouched({});
+      try {
+        setIsSubmitting(true);
+      
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+      
+        const result = await response.json().catch(() => ({}));
+      
+        if (!response.ok) {
+          throw new Error(result?.error || 'Invio fallito');
+        }
+      
+        setIsSuccess(true);
+        setFormData({
+          name: '',
+          company: '',
+          revenue: '',
+          challenge: '',
+          contact: '',
+        });
+        setTouched({});
+      } catch (error) {
+        console.error(error);
+        alert(error instanceof Error ? error.message : 'Errore imprevisto');
+      } finally {
+        setIsSubmitting(false);
+      }
+
     }
+
   };
 
   return (

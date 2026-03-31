@@ -3,8 +3,45 @@ import { Link } from 'react-router-dom';
 import { PageTransition } from '../components/PageTransition';
 import { blogPosts } from '../data/blogPosts';
 import { ArrowRight, Calendar, Clock, User } from 'lucide-react';
+import { useState, FormEvent } from 'react';
 
 export function Blog() {
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleNewsletterSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    const trimmed = email.trim();
+    if (!trimmed) return;
+
+    setIsSubmitting(true);
+    setIsSuccess(false);
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: trimmed }),
+      });
+
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(result?.error || 'Iscrizione fallita');
+      }
+
+      setEmail('');
+      setIsSuccess(true);
+    } catch (error) {
+      console.error(error);
+      alert(error instanceof Error ? error.message : 'Errore imprevisto');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <PageTransition>
       <section className="pt-32 pb-20">
@@ -86,20 +123,29 @@ export function Blog() {
           <p className="text-muted mb-10">
             Niente spam. Solo sistemi, dati e strategie di crescita testate sul campo.
           </p>
-          <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          <form
+            className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+            onSubmit={handleNewsletterSubmit}
+          >
             <input
               type="email"
               placeholder="La tua email"
               className="flex-grow bg-background border border-white/10 px-6 py-3 rounded-sm focus:outline-none focus:border-accent transition-colors"
               required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <button
               type="submit"
               className="bg-accent text-black px-8 py-3 rounded-sm font-bold hover:bg-accent-hover transition-colors whitespace-nowrap"
+              disabled={isSubmitting}
             >
               Iscriviti
             </button>
           </form>
+          {isSuccess ? (
+            <p className="text-xs text-muted mt-4">Iscrizione inviata!</p>
+          ) : null}
         </div>
       </section>
     </PageTransition>
