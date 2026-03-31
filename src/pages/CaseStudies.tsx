@@ -1,5 +1,6 @@
 import { PageTransition } from '../components/PageTransition';
 import { motion } from 'motion/react';
+import { useEffect } from 'react';
 import { 
   ArrowUpRight, 
   Users, 
@@ -16,6 +17,19 @@ import {
 } from 'lucide-react';
 
 export function CaseStudies() {
+  useEffect(() => {
+    document.title = 'Casi Studio: Risultati Reali per i Nostri Clienti — SIVRA';
+    const description =
+      'Scopri i casi studio SIVRA: risultati concreti su lead generation, posizionamento e crescita per PMI e liberi professionisti.';
+    let descriptionMeta = document.querySelector('meta[name="description"]');
+    if (!descriptionMeta) {
+      descriptionMeta = document.createElement('meta');
+      descriptionMeta.setAttribute('name', 'description');
+      document.head.appendChild(descriptionMeta);
+    }
+    descriptionMeta.setAttribute('content', description);
+  }, []);
+
   return (
     <PageTransition>
       <section className="pt-40 pb-20 border-b border-white/5">

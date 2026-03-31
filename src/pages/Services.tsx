@@ -1,6 +1,7 @@
 import { PageTransition } from '../components/PageTransition';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, BarChart, Bar, CartesianGrid, PieChart, Pie, Cell } from 'recharts';
 import { CheckCircle2, ArrowRight, Zap, Target, BarChart3, Settings, Users, Cpu, Globe, Lightbulb, TrendingUp, ShieldCheck, HelpCircle, Workflow, Search, Mail, MousePointer2, Palette, Layout, Megaphone, Filter, Share2, MessageSquare, Code, BarChart as BarChartIcon } from 'lucide-react';
 
@@ -33,6 +34,19 @@ const funnelData = [
 ];
 
 export function Services() {
+  useEffect(() => {
+    document.title = 'Servizi Marketing Digitale e Automazione AI — SIVRA';
+    const description =
+      'Servizi di marketing digitale, automazione AI e consulenza strategica per scalare il fatturato. Soluzioni su misura per PMI e liberi professionisti.';
+    let descriptionMeta = document.querySelector('meta[name="description"]');
+    if (!descriptionMeta) {
+      descriptionMeta = document.createElement('meta');
+      descriptionMeta.setAttribute('name', 'description');
+      document.head.appendChild(descriptionMeta);
+    }
+    descriptionMeta.setAttribute('content', description);
+  }, []);
+
   return (
     <PageTransition>
       {/* Hero Section */}

@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { PageTransition } from '../components/PageTransition';
 import { blogPosts } from '../data/blogPosts';
 import { ArrowLeft, Calendar } from 'lucide-react';
+import { useEffect } from 'react';
 
 export function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
@@ -11,6 +12,19 @@ export function BlogPost() {
   if (!post) {
     return <Navigate to="/blog" replace />;
   }
+
+  useEffect(() => {
+    document.title = `${post.title} — Blog SIVRA`;
+    const baseDescription = `${post.excerpt} Scopri la guida completa sul blog SIVRA.`;
+    const description = baseDescription.length > 160 ? `${baseDescription.slice(0, 157)}...` : baseDescription;
+    let descriptionMeta = document.querySelector('meta[name="description"]');
+    if (!descriptionMeta) {
+      descriptionMeta = document.createElement('meta');
+      descriptionMeta.setAttribute('name', 'description');
+      document.head.appendChild(descriptionMeta);
+    }
+    descriptionMeta.setAttribute('content', description);
+  }, [post.excerpt, post.title]);
 
   return (
     <PageTransition>

@@ -1,7 +1,21 @@
 import { PageTransition } from '../components/PageTransition';
 import { motion } from 'motion/react';
+import { useEffect } from 'react';
 
 export function About() {
+  useEffect(() => {
+    document.title = 'Chi Siamo: il Team SIVRA, Growth Partner per PMI Italiane';
+    const description =
+      'Scopri il team SIVRA e il nostro approccio alla crescita: strategia, acquisizione clienti e sistemi di marketing per PMI e professionisti.';
+    let descriptionMeta = document.querySelector('meta[name="description"]');
+    if (!descriptionMeta) {
+      descriptionMeta = document.createElement('meta');
+      descriptionMeta.setAttribute('name', 'description');
+      document.head.appendChild(descriptionMeta);
+    }
+    descriptionMeta.setAttribute('content', description);
+  }, []);
+
   return (
     <PageTransition>
       <section className="pt-40 pb-20 border-b border-white/5">

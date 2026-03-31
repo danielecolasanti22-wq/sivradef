@@ -3,9 +3,22 @@ import { Link } from 'react-router-dom';
 import { PageTransition } from '../components/PageTransition';
 import { blogPosts } from '../data/blogPosts';
 import { ArrowRight, Calendar, Clock, User } from 'lucide-react';
-import { useState, FormEvent } from 'react';
+import { useEffect, useState, FormEvent } from 'react';
 
 export function Blog() {
+  useEffect(() => {
+    document.title = 'Blog Marketing Digitale e Strategie di Crescita — SIVRA';
+    const description =
+      'Blog di marketing digitale SIVRA: guide pratiche su acquisizione clienti, funnel e crescita per PMI. Scopri strategie operative da applicare subito.';
+    let descriptionMeta = document.querySelector('meta[name="description"]');
+    if (!descriptionMeta) {
+      descriptionMeta = document.createElement('meta');
+      descriptionMeta.setAttribute('name', 'description');
+      document.head.appendChild(descriptionMeta);
+    }
+    descriptionMeta.setAttribute('content', description);
+  }, []);
+
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);

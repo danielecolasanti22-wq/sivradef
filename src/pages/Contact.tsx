@@ -20,6 +20,19 @@ interface FormErrors {
 }
 
 export function Contact() {
+  useEffect(() => {
+    document.title = 'Contatta SIVRA: Chiamata Strategica Gratuita — Roma';
+    const description =
+      'Richiedi una chiamata strategica con SIVRA e scopri come costruire un sistema di acquisizione clienti più prevedibile per la tua azienda.';
+    let descriptionMeta = document.querySelector('meta[name="description"]');
+    if (!descriptionMeta) {
+      descriptionMeta = document.createElement('meta');
+      descriptionMeta.setAttribute('name', 'description');
+      document.head.appendChild(descriptionMeta);
+    }
+    descriptionMeta.setAttribute('content', description);
+  }, []);
+
   const [formData, setFormData] = useState<FormData>({
     name: '',
     company: '',

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, BarChart3, Target, Zap, Quote, Download, CheckCircle2, ShieldCheck, Search, RefreshCw, LayoutDashboard } from 'lucide-react';
@@ -16,6 +16,19 @@ const dummyData = [
 ];
 
 export function Home() {
+  useEffect(() => {
+    document.title = 'Agenzia di Marketing Digitale per PMI — SIVRA';
+    const description =
+      'SIVRA costruisce sistemi di acquisizione clienti per imprenditori e PMI italiane. Strategia, funnel, automazione CRM. Analisi gratuita in 30 minuti.';
+    let descriptionMeta = document.querySelector('meta[name="description"]');
+    if (!descriptionMeta) {
+      descriptionMeta = document.createElement('meta');
+      descriptionMeta.setAttribute('name', 'description');
+      document.head.appendChild(descriptionMeta);
+    }
+    descriptionMeta.setAttribute('content', description);
+  }, []);
+
   return (
     <PageTransition>
       {/* Hero Section */}
