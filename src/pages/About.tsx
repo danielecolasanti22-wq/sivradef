@@ -100,44 +100,6 @@ export function About() {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section>
-          <div className="flex justify-between items-end mb-16">
-            <h2 className="text-3xl md:text-5xl font-display font-bold">Leadership</h2>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                name: 'Alex Mercer',
-                role: 'Managing Partner, Strategia',
-                desc: 'Ex consulente McKinsey diventato architetto della crescita. Specializzato in posizionamento B2B e modellazione dei ricavi.'
-              },
-              {
-                name: 'Sarah Chen',
-                role: 'Partner, Acquisizione',
-                desc: 'Oltre 10 anni di esperienza nella costruzione di funnel ad alta conversione per brand e-commerce e SaaS a 8 cifre.'
-              }
-            ].map((person, i) => (
-              <motion.div 
-                key={person.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-card border border-white/5 p-8 rounded-sm group hover:border-white/20 transition-colors"
-              >
-                <div className="w-16 h-16 bg-white/5 rounded-full mb-6 flex items-center justify-center text-xl font-display text-white/30 group-hover:text-accent transition-colors">
-                  {person.name.split(' ').map(n => n[0]).join('')}
-                </div>
-                <h3 className="text-2xl font-display font-bold mb-2">{person.name}</h3>
-                <div className="text-accent text-sm font-mono mb-6 uppercase tracking-wider">{person.role}</div>
-                <p className="text-muted leading-relaxed">{person.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </section>
-
       </div>
     </PageTransition>
   );

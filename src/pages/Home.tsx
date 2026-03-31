@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, BarChart3, Target, Zap, Quote, Download, CheckCircle2, ShieldCheck, Search, RefreshCw, LayoutDashboard } from 'lucide-react';
 import { PageTransition } from '../components/PageTransition';
-import { AnimatedCounter } from '../components/AnimatedCounter';
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
 
 const dummyData = [
@@ -48,9 +47,9 @@ export function Home() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl sm:text-5xl md:text-7xl lg:text-5xl xl:text-6xl font-display font-bold tracking-tighter leading-[1.05] mb-8 lg:mb-4"
             >
-              La maggior parte delle aziende non ha un problema di visibilità. <br />
+              Smetti di comprare visibilità. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-500">
-                Ha un problema di sistema.
+                Inizia a costruire un sistema che vende da solo.
               </span>
             </motion.h1>
             
@@ -60,8 +59,8 @@ export function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl md:text-2xl text-muted mb-12 lg:mb-4 max-w-2xl font-light leading-relaxed"
             >
-              SIVRA costruisce il sistema commerciale che trasforma l'attenzione in fatturato — 
-              attraverso strategia, posizionamento e conversione.
+              SIVRA costruisce il sistema di acquisizione clienti per imprenditori italiani
+              che vogliono smettere di dipendere dal passaparola e scalare in modo prevedibile.
             </motion.p>
             
             <motion.div 
@@ -71,51 +70,41 @@ export function Home() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Link 
-                to="/services"
-                className="px-8 py-4 rounded-sm border border-white/20 hover:border-accent hover:text-accent transition-all duration-300 font-medium tracking-wide flex items-center justify-center"
-              >
-                Scopri i nostri servizi
-              </Link>
-              <Link 
                 to="/contact"
                 className="px-8 py-4 rounded-sm bg-accent text-black hover:bg-accent-hover transition-all duration-300 font-semibold tracking-wide flex items-center justify-center gap-2 group"
               >
                 Richiedi chiamata strategica
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
+              <Link 
+                to="/services"
+                className="px-8 py-4 rounded-sm border border-white/20 hover:border-accent hover:text-accent transition-all duration-300 font-medium tracking-wide flex items-center justify-center"
+              >
+                Scopri i servizi
+              </Link>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Metrics Bar */}
+      {/* SEO Microcopy */}
+      <section className="border-t border-white/5">
+        <div className="container mx-auto px-6 max-w-7xl py-6">
+          <p className="text-sm md:text-base text-muted leading-relaxed">
+            Lead generation, funnel di vendita, automazione marketing, posizionamento Google e sistemi di acquisizione clienti.
+          </p>
+        </div>
+      </section>
+
+      {/* Proof Bar */}
       <section className="border-y border-white/10 bg-card/50 backdrop-blur-sm relative z-20">
         <div className="container mx-auto px-6 max-w-7xl py-8 lg:py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-4 md:gap-4 divide-x-0 md:divide-x divide-white/10">
-            <div className="flex flex-col items-center md:items-start px-2 md:px-4 text-center md:text-left">
-              <span className="text-3xl md:text-5xl lg:text-4xl font-display font-bold text-foreground mb-1 md:mb-2">
-                <AnimatedCounter value={12} />
-              </span>
-              <span className="text-[10px] md:text-sm text-muted uppercase tracking-wider font-medium">Clienti Massimi Attivi</span>
-            </div>
-            <div className="flex flex-col items-center md:items-start px-2 md:px-4 text-center md:text-left">
-              <span className="text-3xl md:text-5xl lg:text-4xl font-display font-bold text-foreground mb-1 md:mb-2">
-                <AnimatedCounter value={90} prefix="< " suffix="gg" />
-              </span>
-              <span className="text-[10px] md:text-sm text-muted uppercase tracking-wider font-medium">Risultati Tangibili</span>
-            </div>
-            <div className="flex flex-col items-center md:items-start px-2 md:px-4 text-center md:text-left">
-              <span className="text-3xl md:text-5xl lg:text-4xl font-display font-bold text-foreground mb-1 md:mb-2">
-                <AnimatedCounter value={50} prefix="+" suffix="%" />
-              </span>
-              <span className="text-[10px] md:text-sm text-muted uppercase tracking-wider font-medium">Efficienza Operativa</span>
-            </div>
-            <div className="flex flex-col items-center md:items-start px-2 md:px-4 text-center md:text-left">
-              <span className="text-3xl md:text-5xl lg:text-4xl font-display font-bold text-foreground mb-1 md:mb-2">
-                <AnimatedCounter value={100} suffix="%" />
-              </span>
-              <span className="text-[10px] md:text-sm text-muted uppercase tracking-wider font-medium">Sistemi Custom</span>
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {['Strategia', 'Acquisizione', 'Automazione', 'Ottimizzazione conversioni'].map((item) => (
+              <div key={item} className="px-4 py-6 border border-white/10 bg-background/50 rounded-sm text-center">
+                <span className="text-[11px] md:text-sm text-muted uppercase tracking-wider font-medium">{item}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -124,7 +113,7 @@ export function Home() {
       <section className="pt-32 pb-[60px] bg-card/30 border-y border-white/5">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="mb-20">
-            <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">Competenze</h2>
+            <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">Servizi di marketing digitale per PMI e professionisti</h2>
             <p className="text-xl text-muted max-w-2xl">Tutto il necessario per trasformare l'attenzione in fatturato.</p>
           </div>
 
@@ -177,8 +166,8 @@ export function Home() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-8 leading-tight">
-                Ingegneria della Crescita: <br />
-                <span className="text-accent">Oltre il Marketing.</span>
+                Lead generation, funnel di vendita <br />
+                <span className="text-accent">e automazione marketing</span>
               </h2>
               <p className="text-muted text-lg leading-relaxed mb-12">
                 Il nostro lavoro inizia dove finisce il marketing tradizionale. Non ci limitiamo a generare traffico; costruiamo l'infrastruttura necessaria per trasformare quell'attenzione in profitto reale e scalabile.
@@ -255,7 +244,7 @@ export function Home() {
       <section className="py-20 border-y border-white/5">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-24">
-            <h2 className="text-3xl md:text-5xl font-display font-bold mb-8">Il Nostro Modus Operandi.</h2>
+            <h2 className="text-3xl md:text-5xl font-display font-bold mb-8">Il metodo SIVRA per acquisire clienti in modo prevedibile</h2>
             <p className="text-muted text-lg">
               Trasparenza totale, dati in tempo reale e una partnership che non si ferma alla semplice consegna di un progetto.
             </p>
