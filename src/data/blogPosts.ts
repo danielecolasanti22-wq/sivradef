@@ -18,33 +18,6 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: '1',
-    slug: 'perche-il-tuo-marketing-non-funziona',
-    title: 'Perché il tuo marketing non funziona (e come risolverlo)',
-    excerpt: 'Molte aziende investono migliaia di euro in pubblicità senza vedere un ritorno. Il problema non è il budget, ma il sistema.',
-    content: `
-      <p>Il marketing moderno è diventato estremamente complesso. Tra algoritmi che cambiano ogni settimana e piattaforme che nascono e muoiono, è facile perdere la bussola.</p>
-      
-      <h2>Il problema del "Secchio Bucato"</h2>
-      <p>Immagina di versare acqua in un secchio con dei buchi sul fondo. Non importa quanta acqua versi, il secchio non si riempirà mai. Molte aziende fanno esattamente questo: versano traffico (acqua) in un sistema di conversione (secchio) che non tiene.</p>
-      
-      <h2>La soluzione: Il Sistema SIVRA</h2>
-      <p>In SIVRA, non crediamo nel marketing "a pioggia". Crediamo nella costruzione di sistemi. Un sistema che funziona è composto da tre pilastri fondamentali:</p>
-      <ul>
-        <li><strong>Posizionamento:</strong> Perché un cliente dovrebbe scegliere te invece della concorrenza?</li>
-        <li><strong>Acquisizione:</strong> Come portiamo persone qualificate a conoscerti in modo prevedibile?</li>
-        <li><strong>Conversione:</strong> Come trasformiamo quel traffico in fatturato reale?</li>
-      </ul>
-      
-      <p>Senza questi tre elementi in perfetto equilibrio, ogni euro speso in marketing è un euro sprecato.</p>
-    `,
-    date: '15 Marzo 2026',
-    author: 'Marco Riva',
-    category: 'Strategia',
-    image: 'https://picsum.photos/seed/strategy/800/600',
-    readTime: '5 min'
-  },
-  {
-    id: '2',
     slug: 'sito-riceve-traffico-ma-non-genera-contatti',
     title: 'Il tuo sito riceve traffico ma non genera contatti? 7 motivi da controllare subito',
     excerpt:
@@ -220,27 +193,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '7 MIN DI LETTURA'
   },
   {
-    id: '3',
-    slug: 'acquisizione-clienti-b2b-2026',
-    title: 'Il futuro dell\'acquisizione clienti B2B nel 2026',
-    excerpt: 'Le vecchie tattiche di cold calling sono morte. Ecco come costruire un motore di lead generation moderno.',
-    content: `
-      <p>Il mercato B2B è cambiato radicalmente. I decision maker sono più informati e meno disposti a tollerare interruzioni non richieste.</p>
-      
-      <h2>Dall'Outbound all'Inbound Strategico</h2>
-      <p>Oggi non vendi più, aiuti a comprare. Il tuo ruolo è diventare un'autorità nel tuo settore attraverso contenuti di valore che risolvono problemi reali.</p>
-      
-      <h2>L'importanza dei Dati</h2>
-      <p>Non puoi scalare ciò che non misuri. Ogni interazione deve essere tracciata per capire dove si perde il potenziale cliente nel funnel.</p>
-    `,
-    date: '5 Marzo 2026',
-    author: 'Marco Riva',
-    category: 'B2B',
-    image: 'https://picsum.photos/seed/b2b/800/600',
-    readTime: '6 min'
-  },
-  {
-    id: '4',
+    id: '2',
     slug: 'homepage-o-landing-page',
     title: 'Homepage o landing page: quale scegliere per acquisire più contatti',
     excerpt:
@@ -395,5 +348,193 @@ export const blogPosts: BlogPost[] = [
     // TODO: sostituire `image` con URL cover dedicata quando disponibile
     image: 'https://picsum.photos/seed/homepagelanding/800/600',
     readTime: '9 MIN DI LETTURA'
+  },
+  {
+    id: '3',
+    slug: 'funnel-acquisizione-clienti-sito-web',
+    title: 'Come creare un funnel di acquisizione clienti che parte dal sito web',
+    excerpt:
+      'Scopri come creare un funnel di acquisizione clienti che parte dal sito web, collegando traffico, pagine, call to action e follow-up in un sistema coerente.',
+    seoTitle: 'Come creare un funnel di acquisizione clienti dal sito web',
+    metaDescription:
+      'Scopri come creare un funnel di acquisizione clienti che parte dal sito web: traffico, pagine, call to action, lead e follow-up.',
+    content: `
+      <p>Molte aziende hanno un sito web, alcune fanno advertising, altre pubblicano contenuti o investono in SEO. Eppure, nonostante il traffico, i contatti non arrivano in modo costante oppure non si trasformano in opportunità concrete.</p>
+
+      <p>Il motivo è semplice: avere un sito non significa avere un funnel di acquisizione clienti.</p>
+
+      <p>Un funnel non è solo un insieme di strumenti. È un percorso. Serve a portare una persona da un primo interesse iniziale fino a una richiesta di contatto, una call o una conversione più avanzata. Se questo percorso non è progettato bene, il sito rischia di restare scollegato dal vero processo di acquisizione.</p>
+
+      <p>Per questo, se vuoi ottenere risultati più stabili, non basta migliorare una singola pagina. Devi costruire un sistema che colleghi traffico, contenuti, call to action e follow-up.</p>
+
+      <h2>Cos'è un funnel di acquisizione clienti</h2>
+      <p>Un funnel di acquisizione clienti è il percorso che accompagna un potenziale cliente dal primo contatto con il tuo brand fino a un'azione concreta.</p>
+
+      <p>Può iniziare da una ricerca su Google, da un annuncio, da un contenuto social, da una referral o da una campagna email. Ma il punto chiave è quello che succede dopo. La persona deve trovare una pagina coerente, capire la proposta, percepire valore, compiere un'azione e ricevere un seguito adeguato.</p>
+
+      <p>Quando manca uno di questi passaggi, il funnel si interrompe.</p>
+
+      <p>Molte aziende confondono il funnel con uno strumento specifico, come una landing page o una campagna adv. In realtà, il funnel è l'insieme di tutti i passaggi che trasformano l'interesse in opportunità.</p>
+
+      <h2>Perché molte aziende hanno un sito ma non un funnel</h2>
+      <p>Avere un sito non significa avere un sistema di acquisizione.</p>
+
+      <p>Spesso il sito è stato costruito come una vetrina: presenta l'azienda, mostra i servizi, racconta chi sei. Ma non accompagna davvero l'utente in un percorso decisionale.</p>
+
+      <p>In altri casi, il problema è che le varie attività sono scollegate. C'è magari traffico da Google, qualche campagna, qualche contenuto, ma non esiste un filo logico tra fonte di traffico, pagina di arrivo, proposta e contatto.</p>
+
+      <p>I problemi più frequenti sono questi:</p>
+      <ul>
+        <li>traffico inviato su pagine troppo generiche</li>
+        <li>call to action poco chiare</li>
+        <li>nessuna offerta intermedia</li>
+        <li>form non collegati a un processo commerciale</li>
+        <li>assenza di follow-up</li>
+        <li>mancanza di misurazione dei passaggi chiave</li>
+      </ul>
+
+      <p>Quando il sito non è inserito in una logica di funnel, anche un buon volume di visite può produrre risultati molto deboli.</p>
+
+      <h2>I 5 elementi di un funnel che parte dal sito web</h2>
+      <p>Un funnel di acquisizione clienti che funziona parte quasi sempre da cinque elementi fondamentali.</p>
+
+      <p>Il primo è la fonte di traffico. Devi sapere da dove arrivano le persone e con quale intenzione.</p>
+      <p>Il secondo è la pagina di destinazione. Ogni fonte di traffico dovrebbe portare a una pagina coerente con il messaggio e con il livello di consapevolezza dell'utente.</p>
+      <p>Il terzo è la proposta o call to action. L'utente deve capire subito quale passo può fare.</p>
+      <p>Il quarto è la raccolta del lead. Il contatto deve essere semplice da lasciare e ben integrato con i tuoi strumenti.</p>
+      <p>Il quinto è il follow-up. Dopo il contatto deve succedere qualcosa: risposta, email, chiamata, automazione o passaggio commerciale.</p>
+
+      <p>Se anche uno solo di questi elementi è debole, il funnel perde efficacia.</p>
+
+      <h2>Step 1. Porta traffico qualificato sul sito</h2>
+      <p>Il funnel parte sempre da una fonte di traffico. Ma non tutto il traffico ha lo stesso valore.</p>
+
+      <p>Una visita può arrivare da:</p>
+      <ul>
+        <li>SEO</li>
+        <li>campagne advertising</li>
+        <li>contenuti organici</li>
+        <li>referral</li>
+        <li>social media</li>
+        <li>email marketing</li>
+      </ul>
+
+      <p>Quello che conta non è solo il volume, ma la qualità. Un traffico qualificato è composto da persone che hanno un interesse reale, un bisogno coerente e una probabilità concreta di compiere un'azione.</p>
+
+      <p>Per questo è importante che la fonte di traffico sia già allineata con il tipo di cliente che vuoi attrarre. Portare molte persone poco interessate sul sito raramente produce contatti utili.</p>
+
+      <h2>Step 2. Crea una pagina pensata per convertire</h2>
+      <p>Una volta che l'utente arriva sul sito, la pagina deve fare il suo lavoro. Non basta presentare informazioni: deve guidare.</p>
+
+      <p>La pagina può essere una homepage, una pagina servizio o una landing page, ma deve essere coerente con la promessa fatta prima del clic. Deve aiutare l'utente a capire subito:</p>
+      <ul>
+        <li>cosa offri</li>
+        <li>quale problema risolvi</li>
+        <li>perché dovrebbe fidarsi</li>
+        <li>qual è il passo successivo</li>
+      </ul>
+
+      <p>Se la pagina è generica, confusa o poco focalizzata, il funnel si spezza molto presto. È qui che molte aziende perdono opportunità: non perché nessuno sia interessato, ma perché la pagina non trasforma l'interesse in azione.</p>
+
+      <h2>Step 3. Offri un passo successivo chiaro</h2>
+      <p>Uno degli errori più comuni è chiedere troppo o troppo poco.</p>
+
+      <p>Ci sono siti che chiedono subito una call senza aver costruito abbastanza fiducia. Altri, invece, non chiedono nulla in modo chiaro e lasciano l'utente senza direzione.</p>
+
+      <p>Un funnel efficace prevede un passo successivo coerente con il livello di maturità del visitatore. Può essere:</p>
+      <ul>
+        <li>una richiesta di contatto</li>
+        <li>una call strategica</li>
+        <li>un audit</li>
+        <li>una demo</li>
+        <li>il download di una risorsa</li>
+        <li>una candidatura o una richiesta informazioni</li>
+      </ul>
+
+      <p>Il punto non è avere tante opzioni, ma avere quella giusta nel momento giusto.</p>
+
+      <h2>Step 4. Raccogli il lead nel modo giusto</h2>
+      <p>Quando la persona decide di compiere un'azione, il processo deve essere semplice.</p>
+
+      <p>Un form troppo lungo, richieste inutili o una UX poco chiara possono abbassare fortemente il tasso di conversione. Anche qui serve equilibrio: raccogliere abbastanza informazioni per qualificare il lead, ma senza creare attrito inutile.</p>
+
+      <p>È importante anche che il lead venga gestito correttamente. Se il form arriva in una casella email che nessuno monitora o non entra in un CRM, il funnel si interrompe proprio nel punto più delicato.</p>
+
+      <p>La raccolta del contatto non è un dettaglio tecnico. È un passaggio strategico del sistema.</p>
+
+      <h2>Step 5. Attiva un follow-up efficace</h2>
+      <p>Molti funnel si rompono dopo la conversione iniziale.</p>
+
+      <p>La persona compila un form, ma non riceve risposta. Oppure riceve una mail automatica generica e poi il silenzio. Oppure viene contattata troppo tardi, quando l'interesse si è già raffreddato.</p>
+
+      <p>Il follow-up è uno degli elementi più sottovalutati, ma anche uno dei più importanti. Può includere:</p>
+      <ul>
+        <li>una mail immediata di conferma</li>
+        <li>una sequenza email</li>
+        <li>una notifica interna al team</li>
+        <li>una presa in carico commerciale</li>
+        <li>una chiamata o un contatto entro tempi rapidi</li>
+      </ul>
+
+      <p>Un funnel non finisce quando il lead entra. Inizia davvero lì.</p>
+
+      <h2>Errori da evitare in un funnel di acquisizione clienti</h2>
+      <p>Uno degli errori principali è pensare che basti avere traffico per ottenere clienti. Il traffico è solo l'inizio.</p>
+
+      <p>Un altro errore è usare pagine troppo generiche per obiettivi molto specifici. Oppure chiedere un contatto senza aver chiarito bene il valore dell'offerta.</p>
+
+      <p>Altri errori comuni sono:</p>
+      <ul>
+        <li>non avere CTA forti</li>
+        <li>non misurare i punti di abbandono</li>
+        <li>non distinguere tra traffico freddo e traffico caldo</li>
+        <li>non collegare marketing e sales</li>
+        <li>non avere un'offerta intermedia</li>
+        <li>non seguire rapidamente i lead generati</li>
+      </ul>
+
+      <p>Tutti questi elementi riducono la capacità del funnel di trasformare le visite in opportunità reali.</p>
+
+      <h2>Esempio semplice di funnel che parte dal sito web</h2>
+      <p>Immaginiamo un'azienda di servizi che vuole acquisire nuovi contatti qualificati.</p>
+
+      <p>Una persona cerca su Google un problema specifico, per esempio come migliorare le conversioni del proprio sito. Trova un articolo ben posizionato sul blog. Legge il contenuto, trova utile l'approccio e clicca su un approfondimento o su una CTA verso una pagina dedicata.</p>
+
+      <p>In quella pagina trova una proposta chiara, una spiegazione del servizio, alcuni elementi di prova sociale e un invito a richiedere una call strategica. Compila il form, riceve una mail di conferma e viene ricontattata in tempi rapidi.</p>
+
+      <p>Questo è già un funnel. Non serve per forza una struttura complessa: serve una sequenza coerente.</p>
+
+      <h2>Come capire se il tuo funnel funziona</h2>
+      <p>Per capire se il funnel sta funzionando non basta guardare il numero totale di visite.</p>
+
+      <p>Devi osservare almeno questi punti:</p>
+      <ul>
+        <li>quante persone arrivano sulle pagine chiave</li>
+        <li>quanto tempo restano</li>
+        <li>quante cliccano sulle CTA</li>
+        <li>quante compilano il form</li>
+        <li>quanti lead vengono realmente gestiti</li>
+        <li>quanti contatti diventano opportunità o clienti</li>
+      </ul>
+
+      <p>Se vedi molto traffico ma poche azioni, il problema può essere nella pagina. Se vedi molti lead ma poche opportunità, il problema può essere nel follow-up o nella qualità del traffico.</p>
+
+      <p>Misurare questi passaggi aiuta a capire dove intervenire senza andare a tentativi.</p>
+
+      <h2>Conclusione</h2>
+      <p>Creare un funnel di acquisizione clienti che parte dal sito web significa smettere di vedere il sito come una semplice presenza online e iniziare a usarlo come parte di un sistema.</p>
+
+      <p>Il sito da solo non basta. Serve una logica che colleghi traffico, pagina, proposta, conversione e follow-up. Quando questi elementi lavorano insieme, il processo di acquisizione diventa più chiaro, più misurabile e soprattutto più efficace.</p>
+
+      <p>Non servono per forza decine di strumenti o automazioni complesse. Spesso basta costruire bene i passaggi essenziali e renderli coerenti tra loro.</p>
+
+      <p>Se vuoi costruire un funnel che parta dal tuo sito e trasformi il traffico in richieste concrete, il primo passo è analizzare il percorso attuale e capire dove si interrompe la conversione.</p>
+    `,
+    date: '28 Marzo 2026',
+    author: 'Marco Riva',
+    category: 'STRATEGIA',
+    // TODO: sostituire `image` con URL cover dedicata quando disponibile
+    image: 'https://picsum.photos/seed/funnelacq/800/600',
+    readTime: '11 MIN DI LETTURA'
   }
 ];
