@@ -1,18 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowRight, BarChart3, Target, Zap, Quote, Download, CheckCircle2, ShieldCheck, Search, RefreshCw, LayoutDashboard } from 'lucide-react';
+import { ArrowRight, Search, RefreshCw, LayoutDashboard } from 'lucide-react';
 import { PageTransition } from '../components/PageTransition';
-import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
-
-const dummyData = [
-  { month: 'Gen', revenue: 4000 },
-  { month: 'Feb', revenue: 4500 },
-  { month: 'Mar', revenue: 5200 },
-  { month: 'Apr', revenue: 6100 },
-  { month: 'Mag', revenue: 7500 },
-  { month: 'Giu', revenue: 9200 },
-];
 
 export function Home() {
   useEffect(() => {
