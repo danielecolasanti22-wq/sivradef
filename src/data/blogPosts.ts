@@ -344,7 +344,7 @@ export const blogPosts: BlogPost[] = [
     date: '20 Marzo 2026',
     author: 'Marco Riva',
     category: 'STRATEGIA',
-    image: 'https://picsum.photos/seed/homepagelanding/800/600',
+    image: '/blog/covers/copertina-homepage-landing.png',
     readTime: '9 MIN DI LETTURA'
   },
   {
@@ -531,7 +531,7 @@ export const blogPosts: BlogPost[] = [
     date: '28 Marzo 2026',
     author: 'Marco Riva',
     category: 'STRATEGIA',
-    image: 'https://picsum.photos/seed/funnelacq/800/600',
+    image: '/blog/covers/copertina-funnel-sito-web.png',
     readTime: '11 MIN DI LETTURA'
   }
 ];
