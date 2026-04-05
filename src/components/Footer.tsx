@@ -14,13 +14,13 @@ export function Footer() {
             SIVRA costruisce il sistema di acquisizione clienti per imprenditori italiani che vogliono smettere di dipendere dal passaparola e scalare in modo prevedibile.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-accent hover:text-accent transition-all">
+              <a href="https://www.instagram.com/sivragp/" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-accent hover:text-accent transition-all">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-accent hover:text-accent transition-all">
+              <a href="https://www.facebook.com/profile.php?id=61575393580970" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-accent hover:text-accent transition-all">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-accent hover:text-accent transition-all">
+              <a href="https://www.linkedin.com/company/sivra-growth-partner/" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-accent hover:text-accent transition-all">
                 <Linkedin size={18} />
               </a>
             </div>
