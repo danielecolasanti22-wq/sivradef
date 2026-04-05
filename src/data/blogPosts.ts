@@ -188,8 +188,7 @@ export const blogPosts: BlogPost[] = [
     date: '10 Marzo 2026',
     author: 'Elena Sivi',
     category: 'STRATEGIA',
-    // TODO: sostituire `image` con URL cover dedicata quando disponibile
-    image: 'https://picsum.photos/seed/ecommerce/800/600',
+    image: '/blog/covers/copertina-conversioni-sito.png',
     readTime: '7 MIN DI LETTURA'
   },
   {
@@ -345,7 +344,6 @@ export const blogPosts: BlogPost[] = [
     date: '20 Marzo 2026',
     author: 'Marco Riva',
     category: 'STRATEGIA',
-    // TODO: sostituire `image` con URL cover dedicata quando disponibile
     image: 'https://picsum.photos/seed/homepagelanding/800/600',
     readTime: '9 MIN DI LETTURA'
   },
@@ -533,7 +531,6 @@ export const blogPosts: BlogPost[] = [
     date: '28 Marzo 2026',
     author: 'Marco Riva',
     category: 'STRATEGIA',
-    // TODO: sostituire `image` con URL cover dedicata quando disponibile
     image: 'https://picsum.photos/seed/funnelacq/800/600',
     readTime: '11 MIN DI LETTURA'
   }
