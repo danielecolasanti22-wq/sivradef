@@ -238,5 +238,162 @@ export const blogPosts: BlogPost[] = [
     category: 'B2B',
     image: 'https://picsum.photos/seed/b2b/800/600',
     readTime: '6 min'
+  },
+  {
+    id: '4',
+    slug: 'homepage-o-landing-page',
+    title: 'Homepage o landing page: quale scegliere per acquisire più contatti',
+    excerpt:
+      'Meglio usare homepage o landing page per acquisire contatti? In questa guida vediamo differenze, vantaggi e criteri pratici per scegliere la pagina giusta.',
+    seoTitle: 'Homepage o landing page: quale scegliere per acquisire contatti',
+    metaDescription:
+      'Meglio usare homepage o landing page per acquisire contatti? Scopri differenze, vantaggi, limiti e quando scegliere l\'una o l\'altra.',
+    content: `
+      <p>Quando un'azienda vuole ottenere più richieste dal sito, una delle domande più frequenti è questa: meglio mandare il traffico sulla homepage o su una landing page?</p>
+
+      <p>La risposta breve è che dipende. Ma nella pratica, scegliere la pagina sbagliata può compromettere gran parte del lavoro fatto a monte. Puoi avere una buona campagna, un'offerta interessante o un traffico qualificato, ma se la pagina di arrivo non è coerente con l'obiettivo, le conversioni si abbassano.</p>
+
+      <p>Capire la differenza tra homepage e landing page è importante proprio per questo. Non si tratta solo di una scelta tecnica o di design, ma di una decisione strategica che incide direttamente sulla capacità del sito di acquisire contatti.</p>
+
+      <h2>Differenza tra homepage e landing page</h2>
+      <p>Homepage e landing page non sono la stessa cosa, anche se spesso vengono confuse o usate in modo intercambiabile.</p>
+
+      <p>La homepage è la pagina principale del sito. Di solito ha il compito di presentare il brand, dare una panoramica dei servizi, orientare l'utente tra le varie sezioni e offrire una visione d'insieme dell'azienda.</p>
+
+      <p>La landing page, invece, è una pagina costruita per portare l'utente verso una sola azione specifica. Può essere la richiesta di una consulenza, la prenotazione di una call, la compilazione di un form, il download di una risorsa o qualsiasi altro obiettivo di conversione.</p>
+
+      <p>La differenza principale è questa: <strong>la homepage apre possibilità, la landing page le restringe.</strong> E proprio questa focalizzazione, in molti casi, la rende più efficace per acquisire contatti.</p>
+
+      <h2>A cosa serve davvero una homepage</h2>
+      <p>La homepage è utile quando l'utente ha bisogno di orientarsi. È la pagina giusta per chi vuole capire rapidamente chi sei, cosa fai, come lavori e quali soluzioni offri.</p>
+
+      <p>In un sito ben costruito, la homepage dovrebbe aiutare a:</p>
+      <ul>
+        <li>presentare il posizionamento del brand</li>
+        <li>sintetizzare i servizi principali</li>
+        <li>mostrare elementi di fiducia</li>
+        <li>accompagnare verso le sezioni più importanti del sito</li>
+        <li>offrire uno o più punti di ingresso al contatto</li>
+      </ul>
+
+      <p>Questo significa che la homepage ha un ruolo strategico, ma non sempre è la scelta migliore come pagina di destinazione per una campagna o per traffico molto specifico.</p>
+
+      <p>Quando una persona arriva sulla homepage dopo aver cercato una soluzione precisa, può trovarsi davanti a una pagina troppo ampia, con troppi percorsi alternativi. E quando le opzioni aumentano, spesso la conversione diminuisce.</p>
+
+      <h2>A cosa serve davvero una landing page</h2>
+      <p>La landing page nasce con una logica diversa. Non deve presentare tutto, ma guidare verso un solo obiettivo.</p>
+
+      <p>Per questo, una landing page efficace tende a eliminare distrazioni e a costruire un percorso più lineare. Di solito presenta:</p>
+      <ul>
+        <li>un messaggio molto chiaro</li>
+        <li>un problema ben definito</li>
+        <li>una proposta concreta</li>
+        <li>elementi di prova o fiducia</li>
+        <li>una call to action principale</li>
+        <li>meno uscite secondarie rispetto alla homepage</li>
+      </ul>
+
+      <p>Se l'obiettivo è acquisire un contatto su un servizio specifico, una landing page permette di controllare meglio il messaggio e il percorso dell'utente.</p>
+
+      <p>Questo non significa che ogni landing page converta automaticamente di più. Significa però che, quando è progettata bene e coerente con la fonte di traffico, spesso offre condizioni migliori rispetto a una homepage generica.</p>
+
+      <h2>Homepage o landing page: quale converte di più?</h2>
+      <p>Non esiste una risposta valida in assoluto. La pagina che converte di più dipende soprattutto da tre fattori:</p>
+      <ul>
+        <li>la fonte di traffico</li>
+        <li>l'obiettivo della visita</li>
+        <li>il livello di consapevolezza dell'utente</li>
+      </ul>
+
+      <p>Se una persona conosce già il tuo brand e arriva sul sito per orientarsi tra più servizi, la homepage può funzionare bene. In questo caso, la varietà di contenuti e percorsi può essere utile.</p>
+
+      <p>Se invece stai portando traffico freddo da advertising, da una campagna mirata o da una ricerca molto specifica, una landing page spesso è più efficace. L'utente non vuole esplorare tutto il sito: vuole capire se sei la risposta giusta al suo bisogno in quel momento.</p>
+
+      <p>In altre parole, la homepage è più adatta a chi deve ancora orientarsi. La landing page è più adatta a chi deve compiere un'azione precisa.</p>
+
+      <h2>Quando usare la homepage per acquisire contatti</h2>
+      <p>Ci sono situazioni in cui la homepage può essere una buona scelta anche in ottica conversione.</p>
+
+      <p>Per esempio:</p>
+      <ul>
+        <li>quando il brand è già conosciuto</li>
+        <li>quando il traffico arriva in modo diretto o branded</li>
+        <li>quando l'utente ha bisogno di una panoramica prima di scegliere</li>
+        <li>quando il sito offre più servizi tra cui orientarsi</li>
+        <li>quando la homepage è stata progettata con una chiara logica di conversione</li>
+      </ul>
+
+      <p>In questi casi, la homepage può fare da snodo iniziale e accompagnare l'utente verso il contatto o verso una pagina più specifica.</p>
+
+      <p>Il problema nasce quando la homepage viene usata come pagina universale per ogni tipo di traffico, anche quello più freddo o più focalizzato. In questi casi rischia di diventare dispersiva.</p>
+
+      <h2>Quando usare una landing page per acquisire contatti</h2>
+      <p>La landing page è particolarmente utile quando vuoi guidare il traffico verso una proposta precisa, senza lasciare troppo spazio a percorsi alternativi.</p>
+
+      <p>È la scelta giusta, per esempio, quando:</p>
+      <ul>
+        <li>lanci una campagna advertising</li>
+        <li>promuovi un servizio specifico</li>
+        <li>vuoi raccogliere lead qualificati</li>
+        <li>offri una call, una demo o un audit</li>
+        <li>proponi una risorsa scaricabile o un lead magnet</li>
+        <li>vuoi testare un messaggio o un'offerta</li>
+      </ul>
+
+      <p>In tutti questi casi, la landing page permette di costruire una comunicazione più coerente tra annuncio, bisogno e call to action finale.</p>
+
+      <p>Più la pagina è focalizzata, più è facile capire se sta funzionando. E più è semplice migliorarla nel tempo.</p>
+
+      <h2>Gli errori più comuni nella scelta tra homepage e landing page</h2>
+      <p>Molte aziende non hanno un problema di traffico, ma di pagina di arrivo. Succede quando scelgono la homepage o la landing page per abitudine, senza chiedersi quale sia davvero più adatta all'obiettivo.</p>
+
+      <p>Tra gli errori più frequenti ci sono questi:</p>
+      <ul>
+        <li>mandare traffico freddo sulla homepage</li>
+        <li>usare la homepage come se fosse una landing page</li>
+        <li>creare landing page troppo simili a pagine istituzionali</li>
+        <li>inserire troppe call to action nella stessa pagina</li>
+        <li>non mantenere coerenza tra messaggio dell'annuncio e messaggio della pagina</li>
+      </ul>
+
+      <p>Un altro errore frequente è pensare che la landing page serva solo nelle campagne adv. In realtà può essere utile anche per traffico organico, soprattutto quando una persona cerca una soluzione molto specifica e ha bisogno di una risposta diretta.</p>
+
+      <h2>Come capire quale pagina ti serve davvero</h2>
+      <p>Per scegliere tra homepage e landing page, conviene partire da tre domande molto semplici.</p>
+
+      <p>La prima: da dove arriva il traffico?</p>
+      <p>La seconda: cosa si aspetta di trovare l'utente?</p>
+      <p>La terza: qual è l'azione che vuoi ottenere?</p>
+
+      <p>Se il traffico arriva da una ricerca o da una campagna molto focalizzata, e vuoi che l'utente compia un'azione precisa, la landing page è spesso la scelta migliore.</p>
+
+      <p>Se invece il traffico è più esplorativo, il brand è già conosciuto o l'utente ha bisogno di capire il contesto generale, la homepage può essere più adatta.</p>
+
+      <p>La decisione corretta non dipende dalla preferenza personale o dalla struttura del sito attuale. Dipende dal tipo di conversione che vuoi ottenere.</p>
+
+      <h2>In molti casi, la soluzione migliore non è scegliere una sola pagina</h2>
+      <p>Spesso la vera risposta non è homepage oppure landing page, ma homepage e landing page con ruoli diversi.</p>
+
+      <p>La homepage può servire per presentare il brand, dare orientamento e costruire fiducia. Le landing page possono servire per intercettare bisogni specifici e trasformare il traffico in richieste più facilmente.</p>
+
+      <p>Questa combinazione è molto più efficace di una struttura in cui tutto viene delegato alla homepage o, al contrario, in cui si creano landing page senza una base strategica solida nel resto del sito.</p>
+
+      <p>Un sito orientato all'acquisizione contatti non punta tutto su una singola pagina. Costruisce un percorso coerente tra traffico, contenuti, pagina di destinazione e call to action.</p>
+
+      <h2>Conclusione</h2>
+      <p>Scegliere tra homepage e landing page non è una questione di gusto. È una scelta che incide sul modo in cui l'utente entra nel sito, legge la tua proposta e decide se contattarti oppure no.</p>
+
+      <p>La homepage è utile per presentare e orientare. La landing page è utile per focalizzare e convertire. Capire quando usare l'una o l'altra ti aiuta a evitare dispersione e a costruire un sistema di acquisizione più efficace.</p>
+
+      <p>In molti casi, il problema non è che il sito non abbia abbastanza traffico. È che quel traffico atterra sulla pagina sbagliata.</p>
+
+      <p>Hai bisogno di capire se ti serve una homepage più strategica o una landing page progettata per convertire? Individuare la pagina giusta è spesso il primo passo per aumentare i contatti.</p>
+    `,
+    date: '20 Marzo 2026',
+    author: 'Marco Riva',
+    category: 'STRATEGIA',
+    // TODO: sostituire `image` con URL cover dedicata quando disponibile
+    image: 'https://picsum.photos/seed/homepagelanding/800/600',
+    readTime: '9 MIN DI LETTURA'
   }
 ];
