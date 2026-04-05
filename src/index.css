@@ -34,6 +34,41 @@
   }
 }
 
+/* HTML da dangerouslySetInnerHTML: senza @tailwindcss/typography le classi prose non generano regole */
+@layer components {
+  .blog-post-body h2 {
+    @apply font-display text-3xl md:text-4xl font-bold text-foreground tracking-tight mt-14 mb-6;
+  }
+
+  .blog-post-body h2:first-child {
+    @apply mt-0;
+  }
+
+  .blog-post-body h3 {
+    @apply font-display text-2xl md:text-3xl font-bold text-foreground tracking-tight mt-10 mb-4;
+  }
+
+  .blog-post-body p {
+    @apply text-muted text-lg leading-relaxed mb-8;
+  }
+
+  .blog-post-body p:last-child {
+    @apply mb-0;
+  }
+
+  .blog-post-body ul {
+    @apply list-disc pl-6 mb-10 space-y-3;
+  }
+
+  .blog-post-body li {
+    @apply text-muted text-lg leading-relaxed;
+  }
+
+  .blog-post-body strong {
+    @apply text-foreground font-bold;
+  }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

@@ -99,13 +99,8 @@ export function BlogPost() {
               />
             </div>
 
-            <div 
-              className="prose prose-invert prose-accent max-w-none 
-                prose-h2:font-display prose-h2:text-3xl prose-h2:font-bold prose-h2:mt-12 prose-h2:mb-6
-                prose-p:text-muted prose-p:text-lg prose-p:leading-relaxed prose-p:mb-8
-                prose-li:text-muted prose-li:text-lg prose-li:mb-4
-                prose-strong:text-foreground prose-strong:font-bold
-                prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-8"
+            <div
+              className="blog-post-body max-w-none"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
 
