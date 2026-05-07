@@ -37,13 +37,10 @@ export function Navbar() {
         )}
       >
         <Link to="/" className="shrink-0 flex items-center" aria-label="SIVRA homepage">
-          <video
-            src="/media/sivra-logo-intro.mp4"
-            className="h-7 w-24 object-contain"
-            autoPlay
-            muted
-            playsInline
-            preload="auto"
+          <img
+            src="/sivra-logo.png"
+            alt="SIVRA"
+            className="h-7 w-auto object-contain"
           />
         </Link>
 
