@@ -58,7 +58,15 @@ export function CaseStudies() {
         <section className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
             <div className="text-accent font-mono text-sm tracking-widest uppercase">Web Development & Institutional</div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold leading-tight">Associazione Imprenditori Italia</h2>
+            <a
+              href="https://aimprenditori.it/"
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-start gap-3 text-3xl sm:text-4xl md:text-5xl font-display font-bold leading-tight transition-colors hover:text-accent"
+            >
+              <span>Associazione Imprenditori Italia</span>
+              <ArrowUpRight className="mt-1 h-6 w-6 shrink-0 text-accent opacity-70 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 sm:h-8 sm:w-8" />
+            </a>
             
             <div className="space-y-6 text-muted leading-relaxed">
               <p>
@@ -217,7 +225,15 @@ export function CaseStudies() {
 
           <div className="order-1 lg:order-2 space-y-6">
             <div className="text-accent font-mono text-sm tracking-widest uppercase">Web Management & Digital Marketing</div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold leading-tight">Asterys Lab</h2>
+            <a
+              href="https://asteryslab.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-start gap-3 text-3xl sm:text-4xl md:text-5xl font-display font-bold leading-tight transition-colors hover:text-accent"
+            >
+              <span>Asterys Lab</span>
+              <ArrowUpRight className="mt-1 h-6 w-6 shrink-0 text-accent opacity-70 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 sm:h-8 sm:w-8" />
+            </a>
             
             <div className="space-y-6 text-muted leading-relaxed">
               <p>

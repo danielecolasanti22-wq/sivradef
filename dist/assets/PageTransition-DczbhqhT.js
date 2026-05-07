@@ -1,0 +1,1 @@
+import{j as a,m as o}from"./motion-D_bZj_oq.js";function r({children:i,className:t=""}){return a.jsx(o.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},exit:{opacity:0,y:-20},transition:{duration:.5,ease:[.22,1,.36,1]},className:t,children:i})}export{r as P};

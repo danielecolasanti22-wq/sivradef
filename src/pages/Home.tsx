@@ -91,7 +91,7 @@ export function Home() {
         <div className="container mx-auto px-6 max-w-7xl py-8 lg:py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Strategia', 'Acquisizione', 'Automazione', 'Ottimizzazione conversioni'].map((item) => (
-              <div key={item} className="px-4 py-6 border border-white/10 bg-background/50 rounded-sm text-center">
+              <div key={item} className="px-4 py-6 border border-accent/40 bg-background rounded-sm text-center hover:border-accent/70 transition-all duration-300">
                 <span className="text-[11px] md:text-sm text-muted uppercase tracking-wider font-medium">{item}</span>
               </div>
             ))}

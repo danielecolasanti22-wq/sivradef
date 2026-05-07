@@ -36,8 +36,15 @@ export function Navbar() {
           isScrolled ? 'py-3 bg-background/80' : 'py-4'
         )}
       >
-        <Link to="/" className="text-xl font-display font-bold tracking-tighter text-foreground shrink-0">
-          SIVRA<span className="text-accent">.</span>
+        <Link to="/" className="shrink-0 flex items-center" aria-label="SIVRA homepage">
+          <video
+            src="/media/sivra-logo-intro.mp4"
+            className="h-7 w-24 object-contain"
+            autoPlay
+            muted
+            playsInline
+            preload="auto"
+          />
         </Link>
 
         {/* Desktop Nav */}
